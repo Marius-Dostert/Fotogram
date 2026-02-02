@@ -1,0 +1,214 @@
+body{
+    margin: 0px;
+    font-family: roboto;
+}
+
+h1 {
+    margin: 0px;
+    padding: 50px 0px 25px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h3 {
+    padding: 25px 25px 25px 55px;
+    margin: 0px;
+}
+
+header {
+    background-color: rgb(1, 1, 70);
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+}
+
+header img {
+    padding-left: 30px;
+    height: 60%;
+}
+
+main {
+    min-height: 75vh;
+    color: white;
+    background-color: rgb(42, 14, 68);
+    flex-direction: column;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.content {
+    padding: 25px 50px 50px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.content_switch_button_left {
+    height: 35vh;
+    position:absolute;
+    top: 50%;
+    
+}
+
+.content_switch_button_left img{
+    width: 30px;
+}
+
+.content_switch_button_right {
+    width: 30px;
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    color: white;
+    background-color: rgb(1, 1, 70);
+    height: 10vh;
+}
+
+dialog footer img {
+    width: 30px;
+    margin: 0px 10px;
+}
+
+.content_box_design {
+    object-fit: cover;
+    cursor: pointer;
+    height: 200px;
+    width: 200px;
+    border-radius: 25px;
+    padding: 5px;
+
+}
+
+.thumbnail img:hover {
+    padding: 0px;
+    border: 5px solid #b80000
+}
+
+dialog::backdrop {
+    background-color: rgb(36, 36, 36);
+}
+
+dialog {
+    border-radius: 50px;
+    color: white;
+    padding: 0px;
+    border: 0px;
+}
+
+dialog button {
+    width: 150px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+dialog button:hover {
+    outline: 5px solid #b80000;
+    cursor: pointer;
+}
+
+dialog footer img:hover {
+    outline: 5px solid #b80000;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+dialog img {
+    width: 100%;
+    max-height: 85vh;
+    display: block;
+    object-fit: cover;
+}
+
+dialog header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5vh;
+}
+
+dialog section {
+    display: flex;
+    align-items: center;
+    background-color: black;
+    height: 85vh;
+    border: 0px;
+}
+
+dialog footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+    height: 5vh;
+}
+
+.button_placeholder {
+    width: 50px;
+}
+
+@media (max-width: 750px) {
+
+    .content {
+        padding: 25px 10px 50px 10px;
+    }
+
+    .content_box_design{
+        width: 300px;
+        height: 300px;
+    }
+
+}
+
+@media (max-width: 660px) {
+
+    .content_box_design{
+        width: 500px;
+        height: 500px;
+    }
+
+}
+
+@media (max-width: 550px) {
+
+    .content_box_design{
+        width: 300px;
+        height: 300px;
+    }
+
+    header img{
+        width: 300px;
+    }
+
+}
+
+@media (max-width: 420px) {
+
+    header {
+        height: 10vh;
+    }
+
+    header img{
+        width: 200px;
+    }
+
+    h1 {
+        font-size: 22px;
+        padding: 25px 0px 0px 0px;
+    }
+
+    .content_box_design{
+        width: 280px;
+        height: 280px;
+    }
+
+}

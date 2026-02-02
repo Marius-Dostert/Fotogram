@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Fotogram</title>
+    <link rel="icon" type="image" href="/Fotogram/img/favicon/favicon.svg">
+    <link rel="stylesheet" href="/Fotogram/styles.css">
+
+</head>
+<body>
+    <header>
+        <img src="/Fotogram/img/logo/Fotogram_Logo.svg" alt="Fotogram Logo">
+    </header>
+
+    <main>
+        <h1>Your personal photo album</h1>
+        <div class="content">
+            <div class="thumbnail">
+                <img src="/Fotogram/content/Mercury.jpg" onclick="open_content_box([0])" class="content_box_design" tabindex="0" alt="Merkur" onkeyup="open_with_enter(event.key, 0)">
+            </div>
+            <dialog id="content_box_one" onclick="close_content_box(0)">
+                <header onclick="bubbelingProtection(event)">
+                    <h2>Merkur</h2>
+                </header>
+                <section onclick="bubbelingProtection(event)">
+                    <img src="/Fotogram/content/Mercury.jpg" alt="Merkur_fullscreen">
+                </section>
+                <footer onkeydown="ArrowNavigation(event,-1,0,1)" onclick="bubbelingProtection(event)">
+                    <div class="button_placeholder"></div>
+                    <button onclick="close_content_box(0)">Schließen</button>
+                    <img src="/Fotogram/img/icon/arrow-right.png" onclick="next_content(0,1)" alt="weiter">
+                </footer>
+            </dialog>
+            
+            <div class="thumbnail">
+                <img src="/Fotogram/content/Venus.png" onclick="open_content_box(1)" class="content_box_design" tabindex="0" alt="Venus" onkeyup="open_with_enter(event.key, 1)">
+            </div>
+            <dialog id="content_box_two" onclick="close_content_box(1)">
+                <header onclick="bubbelingProtection(event)">    
+                    <h2>Venus</h2>
+                </header>
+                <section onclick="bubbelingProtection(event)">
+                    <img src="/Fotogram/content/Venus.png" alt="Venus_fullscreen">
+                </section>
+                <footer onkeydown="ArrowNavigation(event,0,1,2)" onclick="bubbelingProtection(event)">
+                    <img src="/Fotogram/img/icon/arrow-left.png" onclick="previous_content(1,0)" alt="zurück">
+                    <button onclick="close_content_box(1)">Schließen</button>
+                    <img src="/Fotogram/img/icon/arrow-right.png" onclick="next_content(1,2)" alt="weiter">
+                </footer>
+            </dialog>
+
+            <div class="thumbnail">    
+                <img src="/Fotogram/content/Earth.jpg" onclick="open_content_box(2)" class="content_box_design" tabindex="0" alt="Erde" onkeyup="open_with_enter(event.key, 2)">
+            </div>    
+            <dialog id="content_box_three" onclick="close_content_box(2)">
+                <header onclick="bubbelingProtection(event)">
+                    <h2>Erde</h2>
+                </header>
+                <section onclick="bubbelingProtection(event)">
+                    <img src="/Fotogram/content/Earth.jpg" alt="Erde_fullscreen">
+                </section>
+                <footer onkeydown="ArrowNavigation(event,1,2,3)" onclick="bubbelingProtection(event)">
+                    <img src="/Fotogram/img/icon/arrow-left.png"onclick="previous_content(2,1)" alt="zurück">
+                    <button onclick="close_content_box(2)">Schließen</button>
+                    <img src="/Fotogram/img/icon/arrow-right.png" onclick="next_content(2,3)" alt="weiter">
+                </footer>
+            </dialog>
+
+            <div class="thumbnail">
+                <img src="/Fotogram/content/Mars.jpg" onclick="open_content_box(3)" class="content_box_design" tabindex="0" alt="Mars" onkeyup="open_with_enter(event.key, 3)">
+            </div>
+            <dialog id="content_box_four" onclick="close_content_box(3)">
+                <header onclick="bubbelingProtection(event)">
+                    <h2>Mars</h2>
+                </header>
+                <section onclick="bubbelingProtection(event)">
+                    <img src="/Fotogram/content/Mars.jpg" alt="Mars_fullscreen">
+                </section>
+                <footer onkeydown="ArrowNavigation(event,2,3,4)" onclick="bubbelingProtection(event)">
+                    <img src="/Fotogram/img/icon/arrow-left.png" onclick="previous_content(3,2)" alt="zurück">
+                    <button onclick="close_content_box(3)">Schließen</button>
+                    <img src="/Fotogram/img/icon/arrow-right.png" onclick="next_content(3,4)" alt="weiter">
+                </footer>
+            </dialog>
+
+            <div class="thumbnail">
+                <img src="/Fotogram/content/Jupiter.png" onclick="open_content_box(4)" class="content_box_design" tabindex="0" alt="Jupiter" onkeyup="open_with_enter(event.key, 4)">
+            </div>
+            <dialog id="content_box_five" onclick="close_content_box(4)">
+                <header onclick="bubbelingProtection(event)">
+                    <h2>Jupiter</h2>
+                </header>
+                <section onclick="bubbelingProtection(event)">
+                    <img src="/Fotogram/content/Jupiter.png" alt="Jupiter_fullscreen">
+                </section>
+                <footer onkeydown="ArrowNavigation(event,3,4,5)" onclick="bubbelingProtection(event)">
+                    <img src="/Fotogram/img/icon/arrow-left.png" onclick="previous_content(4,3)" alt="zurück">
+                    <button onclick="close_content_box(4)">Schließen</button>
+                    <img src="/Fotogram/img/icon/arrow-right.png" onclick="next_content(4,5)" alt="weiter">
+                </footer>
+            </dialog>
+
+            <div class="thumbnail">
+                <img src="/Fotogram/content/Jupiter_moons.jpg" onclick="open_content_box(5)" class="content_box_design" tabindex="0" alt="Jupiter und die Galileischen Monde" onkeyup="open_with_enter(event.key, 5)">
+            </div>
+            <dialog id="content_box_six" onclick="close_content_box(5)">
+                <header onclick="bubbelingProtection(event)">
+                    <h2>Die Galileische Monde</h2>
+                </header>
+                <section onclick="bubbelingProtection(event)">
+                    <img src="/Fotogram/content/Jupiter_moons.jpg" alt="Jupiter und die Galileischen Monde_fullscreen">
+                </section>
+                <footer onkeydown="ArrowNavigation(event,4,5,6)" onclick="bubbelingProtection(event)">
+                    <img src="/Fotogram/img/icon/arrow-left.png" onclick="previous_content(5,4)" alt="zurück">      
+                    <button onclick="close_content_box(5)">Schließen</button>
+                    <img src="/Fotogram/img/icon/arrow-right.png" onclick="next_content(5,6)" alt="weiter">
+                </footer>
+            </dialog>
+
+            <div class="thumbnail">
+                <img src="/Fotogram/content/Saturn.jpg" onclick="open_content_box(6)" class="content_box_design" tabindex="0" alt="Saturn" onkeyup="open_with_enter(event.key, 6)">
+            </div>
+            <dialog id="content_box_seven" onclick="close_content_box(6)">
+                <header onclick="bubbelingProtection(event)">
+                    <h2>Saturn</h2>
+                </header>
+                <section onclick="bubbelingProtection(event)">
+                    <img src="/Fotogram/content/Saturn.jpg"  alt="Saturn_fullscreen">
+                </section>
+                <footer onkeydown="ArrowNavigation(event,5,6,7)" onclick="bubbelingProtection(event)">
+                    <img src="/Fotogram/img/icon/arrow-left.png" onclick="previous_content(6,5)" alt="zurück">
+                    <button onclick="close_content_box(6)">Schließen</button>
+                    <img src="/Fotogram/img/icon/arrow-right.png" onclick="next_content(6,7)" alt="weiter">
+                </footer>
+            </dialog>
+
+            <div class="thumbnail">
+                <img src="/Fotogram/content/Saturn_ring.jpg" onclick="open_content_box(7)" class="content_box_design" tabindex="0" alt="Ringe des Saturn" onkeyup="open_with_enter(event.key, 7)">
+            </div>
+            <dialog id="content_box_eight" onclick="close_content_box(7)">
+                <header onclick="bubbelingProtection(event)">
+                    <h2>Saturn Ringe</h2>
+                </header>
+                <section onclick="bubbelingProtection(event)">
+                    <img src="/Fotogram/content/Saturn_ring.jpg"  alt="Ringe des Saturn_Fullscreen">
+                </section>
+                <footer onkeydown="ArrowNavigation(event,6,7,8)" onclick="bubbelingProtection(event)">
+                    <img src="/Fotogram/img/icon/arrow-left.png" onclick="previous_content(7,6)" alt="zurück">
+                    <button onclick="close_content_box(7)">Schließen</button>
+                    <img src="/Fotogram/img/icon/arrow-right.png" onclick="next_content(7,8)" alt="weiter">
+                </footer>
+            </dialog>
+
+            <div class="thumbnail">
+                <img src="/Fotogram/content/Uranus.png" onclick="open_content_box(8)" class="content_box_design" tabindex="0" alt="Uranus" onkeyup="open_with_enter(event.key, 8)">
+            </div>
+            <dialog id="content_box_nine" onclick="close_content_box(8)">
+                <header onclick="bubbelingProtection(event)">
+                    <h2>Uranus</h2>
+                </header>
+                <section onclick="bubbelingProtection(event)">
+                    <img src="/Fotogram/content/Uranus.png" alt="Uranus_fullscreen">
+                </section>
+                <footer onkeydown="ArrowNavigation(event,7,8,9)" onclick="bubbelingProtection(event)">
+                    <img src="/Fotogram/img/icon/arrow-left.png" onclick="previous_content(8,7)" alt="zurück">
+                    <button onclick="close_content_box(8)">Schließen</button>
+                    <img src="/Fotogram/img/icon/arrow-right.png" onclick="next_content(8,9)" alt="weiter">
+                </footer>
+            </dialog>
+
+            <div class="thumbnail">
+                <img src="/Fotogram/content/Uranus_sunrise.jpg" onclick="open_content_box(9)" class="content_box_design" tabindex="0" alt="Dämmerung auf Uranus" onkeyup="open_with_enter(event.key, 9)">
+            </div>
+            <dialog id="content_box_ten" onclick="close_content_box(9)">
+                <header onclick="bubbelingProtection(event)">
+                    <h2>Uranus Sonnenaufgang</h2>
+                </header>
+                <section onclick="bubbelingProtection(event)">
+                    <img src="/Fotogram/content/Uranus_sunrise.jpg" alt="Dämmerung auf Uranus_fullscreen">
+                </section>
+                <footer onkeydown="ArrowNavigation(event,8,9,10)" onclick="bubbelingProtection(event)">
+                    <img src="/Fotogram/img/icon/arrow-left.png" onclick="previous_content(9,8)" alt="zurück">
+                    <button onclick="close_content_box(9)">Schließen</button>
+                    <img src="/Fotogram/img/icon/arrow-right.png" onclick="next_content(9,10)" alt="weiter">
+                </footer>
+            </dialog>
+
+            <div class="thumbnail">
+                <img src="/Fotogram/content/neptun.jpg" onclick="open_content_box(10)" class="content_box_design" tabindex="0" alt="Neptun" onkeyup="open_with_enter(event.key, 10)">
+            </div>
+            <dialog id="content_box_eleven" onclick="close_content_box(10)">
+                <header onclick="bubbelingProtection(event)">
+                    <h2>Neptun</h2>
+                </header>
+                <section onclick="bubbelingProtection(event)">
+                    <img src="/Fotogram/content/neptun.jpg" alt="Neptun_fullscreen">
+                </section>
+                <footer onkeydown="ArrowNavigation(event,9,10,11)" onclick="bubbelingProtection(event)">
+                    <img src="/Fotogram/img/icon/arrow-left.png" onclick="previous_content(10,9)" alt="zurück">
+                    <button onclick="close_content_box(10)">Schließen</button>
+                    <img src="/Fotogram/img/icon/arrow-right.png" onclick="next_content(10,11)" alt="weiter">
+                </footer>
+            </dialog>
+
+            <div class="thumbnail">
+                <img src="/Fotogram/content/Neptune_storms.jpg" onclick="open_content_box(11)" class="content_box_design" tabindex="0" alt="Stürme auf Neptun" onkeyup="open_with_enter(event.key, 11)">
+            </div>
+            <dialog id="content_box_twelve" onclick="close_content_box(11)">
+                <header onclick="bubbelingProtection(event)">
+                    <h2>Stürme auf Neptun</h2>
+                </header>
+                <section onclick="bubbelingProtection(event)">
+                    <img src="/Fotogram/content/Neptune_storms.jpg" alt="Stürme auf Neptun_fullscreen">
+                </section>
+                <footer onkeydown="ArrowNavigation(event,10,11)" onclick="bubbelingProtection(event)">
+                    <img src="/Fotogram/img/icon/arrow-left.png" onclick="previous_content(11,10)" alt="zurück">
+                    <button onclick="close_content_box(11)">Schließen</button>
+                    <div class="button_placeholder"></div>
+                </footer>
+            </dialog>
+
+        </div>
+    </main>
+
+    <footer>
+        <h3> Planets of our Solarsystem</h3>
+    </footer>   
+</body>
+    <script src="/Fotogram/script.js"></script>
+</html>
