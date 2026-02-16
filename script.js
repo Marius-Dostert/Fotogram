@@ -1,4 +1,6 @@
 
+
+
 let ContentArray = ["content_box_one", "content_box_two", "content_box_three", "content_box_four", "content_box_five", "content_box_six", "content_box_seven", "content_box_eight", "content_box_nine", "content_box_ten", "content_box_eleven", "content_box_twelve"];
 
 function open_with_enter(usedKey, content_box_number) {
