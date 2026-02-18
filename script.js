@@ -1,7 +1,7 @@
 
 let contentTitles = ["Merkur", "Venus", "Erde", "Mars", "Jupiter", "Saturn", "Uranus", "Neptun"]
 
-let contentImg = ["img src='content/Mercury.jpg'"]
+let contentImg = ["<img src='content/Mercury.jpg' class='content_box_design'>"]
 
 function render () {
     let contentref = document.getElementById("content")
@@ -15,9 +15,9 @@ function getNotesHtml(index){
                                         <h1>
                                             ${contentTitles[index]}
                                         </h1>
-                                        <p>
+                                        <div class="thumbnail">
                                             ${contentImg[index]}
-                                        </p>
+                                        </div>
                                     </div>`
 }
 
