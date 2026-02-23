@@ -1,22 +1,34 @@
+let contentThumbnail = ['<div class="thumbnail"><img src="/content/Mercury.jpg" onclick="open_content_box([0])" class="content_box_design" tabindex="0" alt="Merkur" onkeyup="open_with_enter(event.key, 0)"</div>']
 
-let contentTitles = ["Merkur", "Venus", "Erde", "Mars", "Jupiter", "Saturn", "Uranus", "Neptun"]
-
-let contentImg = ["<img src='content/Mercury.jpg' class='content_box_design'>"]
+let contentDialog = [`<dialog id="content_box_one" onclick="close_content_box(0)">
+                        <header onclick="bubbelingProtection(event)">
+                            <h2>Merkur</h2>
+                        </header>
+                        <section onclick="bubbelingProtection(event)">
+                            <img src="content/Mercury.jpg" alt="Merkur_fullscreen">
+                        </section>
+                        <footer onkeydown="ArrowNavigation(event,-1,0,1)" onclick="bubbelingProtection(event)">
+                            <div class="button_placeholder"></div>
+                            <button onclick="close_content_box(0)">Schließen</button>
+                            <img src="img/icon/arrow-right.png" onclick="next_content(0,1)" alt="weiter">
+                        </footer>
+                    </dialog>`
+]
 
 function render () {
     let contentref = document.getElementById("content")
-    for (let index = 0; index < contentTitles.length; index++) {
+    for (let index = 0; index < contentThumbnail.length; index++) {
         contentref.innerHTML += getNotesHtml(index);
     }
 }
 
 function getNotesHtml(index){
     return `     <div class="single_element">
-                                        <h1>
-                                            ${contentTitles[index]}
-                                        </h1>
-                                        <div class="thumbnail">
-                                            ${contentImg[index]}
+                                        <div>
+                                            ${contentThumbnail[index]}
+                                        </div>
+                                        <div>
+                                            ${contentDialog[index]}
                                         </div>
                                     </div>`
 }
