@@ -205,7 +205,7 @@ function render () {
 
 function getNotesHtml(index){
     return `     <div class="single_element">
-                                        <div>
+                                        <div class="thumbnail-section">
                                             ${contentThumbnail[index]}
                                         </div>
                                         <div>
