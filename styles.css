@@ -6,9 +6,6 @@ body{
 h1 {
     margin: 0px;
     padding: 50px 0px 0px 0px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 h3 {
@@ -93,7 +90,7 @@ dialog footer img {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    padding: 35px;
+    padding: 35px 20px;
 }
 
 .thumbnail img:hover {
@@ -163,60 +160,55 @@ dialog footer {
     width: 50px;
 }
 
-@media (max-width: 750px) {
 
-    .content {
-        padding: 25px 10px 50px 10px;
-    }
-
+@media (max-width: 900px) {
     .content_box_design{
-        width: 300px;
-        height: 300px;
+        height: 230px;
+        width: 230px;
     }
 
 }
 
-@media (max-width: 660px) {
-
+@media (max-width: 780px) {
     .content_box_design{
-        width: 500px;
-        height: 500px;
-        padding: 10px;
+        height: 280px;
+        width: 280px;
     }
-
 }
 
-@media (max-width: 550px) {
-
+@media (max-width: 640px) {
     .content_box_design{
-        width: 300px;
-        height: 300px;
+        height: 220px;
+        width: 220px;
     }
 
     header img{
-        width: 300px;
+        height: 60px;
     }
-
-}
-
-@media (max-width: 420px) {
-
-    header {
-        height: 10vh;
-    }
-
-    header img{
-        width: 200px;
-    }
-
+    
     h1 {
-        font-size: 22px;
-        padding: 25px 0px 0px 0px;
+        font-size: 25px;
     }
+}
 
+@media (max-width: 520px) {
     .content_box_design{
-        width: 250px;
-        height: 250px;
+        height: auto;
+        width: 90vw;
+    }
+}
+
+@media (max-width: 390px) {
+    
+    header img{
+        height: 46px;
+    }
+    
+    h1 {
+        font-size: 20px;
     }
 
+    h3 {
+        font-size: 17px;
+    }
 }
