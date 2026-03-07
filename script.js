@@ -1,4 +1,4 @@
-let contentThumbnail = [`<div class="thumbnail"><img src="/content/Mercury.jpg" onclick="open_content_box([0])" class="content_box_design" tabindex="0" alt="Merkur" onkeyup="open_with_enter(event.key, 0)"></div>
+let contentThumbnail = [`<div class="thumbnail"><img src="content/Mercury.jpg" onclick="open_content_box([0])" class="content_box_design" tabindex="0" alt="Merkur" onkeyup="open_with_enter(event.key, 0)"></div>
                         <div class="thumbnail"><img src="content/Venus.png" onclick="open_content_box(1)" class="content_box_design" tabindex="0" alt="Venus" onkeyup="open_with_enter(event.key, 1)"></div>
                         <div class="thumbnail"><img src="content/Earth.jpg" onclick="open_content_box(2)" class="content_box_design" tabindex="0" alt="Erde" onkeyup="open_with_enter(event.key, 2)"></div>
                         <div class="thumbnail"><img src="content/Mars.jpg" onclick="open_content_box(3)" class="content_box_design" tabindex="0" alt="Mars" onkeyup="open_with_enter(event.key, 3)"></div>
