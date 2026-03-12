@@ -192,6 +192,7 @@ dialog footer {
 
 @media (max-width: 520px) {
     .content_box_design{
+        padding: 5px 0px;
         height: auto;
         width: 100%;
     }
