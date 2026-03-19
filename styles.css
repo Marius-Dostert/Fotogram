@@ -81,8 +81,6 @@ dialog footer img {
     height: 200px;
     width: 200px;
     border-radius: 25px;
-    padding: 5px;
-
 }
 
 .thumbnail-section {
@@ -94,6 +92,23 @@ dialog footer img {
 
 .thumbnail img:hover {
     padding: 0px;
+    border: 5px solid #b80000
+}
+
+.thumbnail_button {
+    all: unset;
+    padding: 5px;
+}
+
+.thumbnail_button:hover {
+    padding: 0px;
+    border-radius: 25px;
+    border: 5px solid #b80000
+}
+
+.thumbnail_button:focus {
+    padding: 0px;
+    border-radius: 25px;
     border: 5px solid #b80000
 }
 
@@ -158,6 +173,8 @@ dialog footer {
 .button_placeholder {
     width: 50px;
 }
+
+
 
 
 @media (max-width: 900px) {

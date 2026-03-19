@@ -1,15 +1,15 @@
-let contentThumbnail = [`<div class="thumbnail"><img src="content/Mercury.jpg" onclick="open_content_box([0])" class="content_box_design" tabindex="0" alt="Merkur" onkeyup="open_with_enter(event.key, 0)"></div>
-                        <div class="thumbnail"><img src="content/Venus.png" onclick="open_content_box(1)" class="content_box_design" tabindex="0" alt="Venus" onkeyup="open_with_enter(event.key, 1)"></div>
-                        <div class="thumbnail"><img src="content/Earth.jpg" onclick="open_content_box(2)" class="content_box_design" tabindex="0" alt="Erde" onkeyup="open_with_enter(event.key, 2)"></div>
-                        <div class="thumbnail"><img src="content/Mars.jpg" onclick="open_content_box(3)" class="content_box_design" tabindex="0" alt="Mars" onkeyup="open_with_enter(event.key, 3)"></div>
-                        <div class="thumbnail"><img src="content/Jupiter.png" onclick="open_content_box(4)" class="content_box_design" tabindex="0" alt="Jupiter" onkeyup="open_with_enter(event.key, 4)"></div>
-                        <div class="thumbnail"><img src="content/Jupiter_moons.jpg" onclick="open_content_box(5)" class="content_box_design" tabindex="0" alt="Jupiter und die Galileischen Monde" onkeyup="open_with_enter(event.key, 5)"></div>
-                        <div class="thumbnail"><img src="content/Saturn.jpg" onclick="open_content_box(6)" class="content_box_design" tabindex="0" alt="Saturn" onkeyup="open_with_enter(event.key, 6)"></div>
-                        <div class="thumbnail"><img src="content/Saturn_ring.jpg" onclick="open_content_box(7)" class="content_box_design" tabindex="0" alt="Ringe des Saturn" onkeyup="open_with_enter(event.key, 7)"></div>
-                        <div class="thumbnail"><img src="content/Uranus.png" onclick="open_content_box(8)" class="content_box_design" tabindex="0" alt="Uranus" onkeyup="open_with_enter(event.key, 8)"></div>
-                        <div class="thumbnail"><img src="content/Uranus_sunrise.jpg" onclick="open_content_box(9)" class="content_box_design" tabindex="0" alt="Dämmerung auf Uranus" onkeyup="open_with_enter(event.key, 9)"></div>
-                        <div class="thumbnail"><img src="content/neptun.jpg" onclick="open_content_box(10)" class="content_box_design" tabindex="0" alt="Neptun" onkeyup="open_with_enter(event.key, 10)"></div>
-                        <div class="thumbnail"><img src="content/Neptune_storms.jpg" onclick="open_content_box(11)" class="content_box_design" tabindex="0" alt="Stürme auf Neptun" onkeyup="open_with_enter(event.key, 11)"></div>
+let contentThumbnail = [`<button class="thumbnail_button" onclick="open_content_box(0)" onkeydown="open_with_enter(event.key, 0)"><img src="content/Mercury.jpg" class="content_box_design" tabindex="0" alt="Merkur"></button>
+                         <button class="thumbnail_button" onclick="open_content_box(1)" onkeydown="open_with_enter(event.key, 1)"><img src="content/Venus.png" class="content_box_design" tabindex="0" alt="Venus"></button>
+                         <button class="thumbnail_button" onclick="open_content_box(2)" onkeydown="open_with_enter(event.key, 2)"><img src="content/Earth.jpg" class="content_box_design" tabindex="0" alt="Erde"></button>
+                         <button class="thumbnail_button" onclick="open_content_box(3)" onkeydown="open_with_enter(event.key, 3)"><img src="content/Mars.jpg" class="content_box_design" tabindex="0" alt="Mars"></button>
+                         <button class="thumbnail_button" onclick="open_content_box(4)" onkeydown="open_with_enter(event.key, 4)"><img src="content/Jupiter.png" class="content_box_design" tabindex="0" alt="Jupiter"></button>
+                         <button class="thumbnail_button" onclick="open_content_box(5)" onkeydown="open_with_enter(event.key, 5)"><img src="content/Jupiter_moons.jpg" class="content_box_design" tabindex="0" alt="Jupiter und die Galileischen Monde"></button>
+                         <button class="thumbnail_button" onclick="open_content_box(6)" onkeydown="open_with_enter(event.key, 6)"><img src="content/Saturn.jpg" class="content_box_design" tabindex="0" alt="Saturn"></button>
+                         <button class="thumbnail_button" onclick="open_content_box(7)" onkeydown="open_with_enter(event.key, 7)"><img src="content/Saturn_ring.jpg" class="content_box_design" tabindex="0" alt="Ringe des Saturn"></button>
+                         <button class="thumbnail_button" onclick="open_content_box(8)" onkeydown="open_with_enter(event.key, 8)"><img src="content/Uranus.png" class="content_box_design" tabindex="0" alt="Uranus"></button>
+                         <button class="thumbnail_button" onclick="open_content_box(9)" onkeydown="open_with_enter(event.key, 9)"><img src="content/Uranus_sunrise.jpg" class="content_box_design" tabindex="0" alt="Dämmerung auf Uranus"></button>
+                         <button class="thumbnail_button" onclick="open_content_box(10)" onkeydown="open_with_enter(event.key, 10)"><img src="content/neptun.jpg" class="content_box_design" tabindex="0" alt="Neptun"></button>
+                         <button class="thumbnail_button" onclick="open_content_box(11)" onkeydown="open_with_enter(event.key, 11)"><img src="content/Neptune_storms.jpg" class="content_box_design" tabindex="0" alt="Stürme auf Neptun"></button>
                         `]
 
 let contentDialog = [`<dialog id="content_box_one" onclick="close_content_box(0)">
