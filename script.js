@@ -12,7 +12,7 @@ let contentThumbnail = [`<button class="thumbnail_button" onclick="open_content_
                          <button class="thumbnail_button" onclick="open_content_box(11)" onkeydown="open_with_enter(event.key, 11)"><img src="content/Neptune_storms.jpg" class="content_box_design" alt="Stürme auf Neptun"></button>
                         `]
 
-let contentDialog = [`<dialog id="content_box_one" onclick="close_content_box(0)">
+let contentHTML = [ `<dialog id = dialog_0 onclick="close_content_box(0)">
                         <header onclick="bubbelingProtection(event)">
                             <h2>Merkur</h2>
                         </header>
@@ -26,7 +26,7 @@ let contentDialog = [`<dialog id="content_box_one" onclick="close_content_box(0)
                         </footer>
                     </dialog>
 
-                    <dialog id="content_box_two" onclick="close_content_box(1)">
+                    <dialog id = dialog_1 onclick="close_content_box(1)">
                         <header onclick="bubbelingProtection(event)">    
                             <h2>Venus</h2>
                         </header>
@@ -40,7 +40,7 @@ let contentDialog = [`<dialog id="content_box_one" onclick="close_content_box(0)
                         </footer>
                     </dialog>
 
-                    <dialog id="content_box_three" onclick="close_content_box(2)">
+                    <dialog id = dialog_2 onclick="close_content_box(2)">
                         <header onclick="bubbelingProtection(event)">
                             <h2>Erde</h2>
                         </header>
@@ -54,7 +54,7 @@ let contentDialog = [`<dialog id="content_box_one" onclick="close_content_box(0)
                         </footer>
                     </dialog>
 
-                    <dialog id="content_box_four" onclick="close_content_box(3)">
+                    <dialog id = dialog_3 onclick="close_content_box(3)">
                         <header onclick="bubbelingProtection(event)">
                             <h2>Mars</h2>
                         </header>
@@ -68,7 +68,7 @@ let contentDialog = [`<dialog id="content_box_one" onclick="close_content_box(0)
                         </footer>
                     </dialog>
 
-                    <dialog id="content_box_five" onclick="close_content_box(4)">
+                    <dialog id = dialog_4 onclick="close_content_box(4)">
                         <header onclick="bubbelingProtection(event)">
                             <h2>Jupiter</h2>
                         </header>
@@ -82,7 +82,7 @@ let contentDialog = [`<dialog id="content_box_one" onclick="close_content_box(0)
                         </footer>
                     </dialog>
 
-                    <dialog id="content_box_six" onclick="close_content_box(5)">
+                    <dialog id = dialog_5 onclick="close_content_box(5)">
                         <header onclick="bubbelingProtection(event)">
                             <h2>Die Galileische Monde</h2>
                         </header>
@@ -96,7 +96,7 @@ let contentDialog = [`<dialog id="content_box_one" onclick="close_content_box(0)
                         </footer>
                     </dialog>
 
-                    <dialog id="content_box_seven" onclick="close_content_box(6)">
+                    <dialog id = dialog_6 onclick="close_content_box(6)">
                         <header onclick="bubbelingProtection(event)">
                             <h2>Saturn</h2>
                         </header>
@@ -110,7 +110,7 @@ let contentDialog = [`<dialog id="content_box_one" onclick="close_content_box(0)
                         </footer>
                     </dialog>
 
-                    <dialog id="content_box_eight" onclick="close_content_box(7)">
+                    <dialog id = dialog_7 onclick="close_content_box(7)">
                         <header onclick="bubbelingProtection(event)">
                             <h2>Saturn Ringe</h2>
                         </header>
@@ -124,7 +124,7 @@ let contentDialog = [`<dialog id="content_box_one" onclick="close_content_box(0)
                         </footer>
                     </dialog>
 
-                    <dialog id="content_box_nine" onclick="close_content_box(8)">
+                    <dialog id = dialog_8 onclick="close_content_box(8)">
                         <header onclick="bubbelingProtection(event)">
                             <h2>Uranus</h2>
                         </header>
@@ -138,7 +138,7 @@ let contentDialog = [`<dialog id="content_box_one" onclick="close_content_box(0)
                         </footer>
                     </dialog>
 
-                    <dialog id="content_box_ten" onclick="close_content_box(9)">
+                    <dialog id = dialog_9 onclick="close_content_box(9)">
                         <header onclick="bubbelingProtection(event)">
                             <h2>Uranus Sonnenaufgang</h2>
                         </header>
@@ -152,7 +152,7 @@ let contentDialog = [`<dialog id="content_box_one" onclick="close_content_box(0)
                         </footer>
                     </dialog>
 
-                    <dialog id="content_box_eleven" onclick="close_content_box(10)">
+                    <dialog id = dialog_10 onclick="close_content_box(10)">
                         <header onclick="bubbelingProtection(event)">
                             <h2>Neptun</h2>
                         </header>
@@ -166,21 +166,7 @@ let contentDialog = [`<dialog id="content_box_one" onclick="close_content_box(0)
                         </footer>
                     </dialog>
 
-                    <dialog id="content_box_eleven" onclick="close_content_box(10)">
-                        <header onclick="bubbelingProtection(event)">
-                            <h2>Neptun</h2>
-                        </header>
-                        <section onclick="bubbelingProtection(event)">
-                            <img src="content/neptun.jpg" alt="Neptun_fullscreen">
-                        </section>
-                        <footer onkeydown="ArrowNavigation(event,9,10,11)" onclick="bubbelingProtection(event)">
-                            <img src="img/icon/arrow-left.png" onclick="previous_content(10,9)" alt="zurück" tabindex="0">
-                            <button onclick="close_content_box(10)" tabindex="0">Schließen</button>
-                            <img src="img/icon/arrow-right.png" onclick="next_content(10,11)" alt="weiter" tabindex="0">
-                        </footer>
-                    </dialog>
-
-                    <dialog id="content_box_twelve" onclick="close_content_box(11)">
+                    <dialog id = dialog_11 onclick="close_content_box(11)">
                         <header onclick="bubbelingProtection(event)">
                             <h2>Stürme auf Neptun</h2>
                         </header>
@@ -194,6 +180,19 @@ let contentDialog = [`<dialog id="content_box_one" onclick="close_content_box(0)
                         </footer>
                     </dialog>
                 `]
+
+let functionIDs =   ["dialog_0", 
+                     "dialog_1", 
+                     "dialog_2", 
+                     "dialog_3", 
+                     "dialog_4", 
+                     "dialog_5", 
+                     "dialog_6", 
+                     "dialog_7", 
+                     "dialog_8", 
+                     "dialog_9", 
+                     "dialog_10", 
+                     "dialog_11"]
 
 
 function render () {
@@ -209,13 +208,11 @@ function getNotesHtml(index){
                                             ${contentThumbnail[index]}
                                         </div>
                                         <div>
-                                            ${contentDialog[index]}
+                                            ${contentHTML[index]}
                                         </div>
                                     </div>`
 }
 
-
-let ContentArray = ["content_box_one", "content_box_two", "content_box_three", "content_box_four", "content_box_five", "content_box_six", "content_box_seven", "content_box_eight", "content_box_nine", "content_box_ten", "content_box_eleven", "content_box_twelve"];
 
 function open_with_enter(usedKey, content_box_number) {
     let key = usedKey
@@ -224,17 +221,17 @@ function open_with_enter(usedKey, content_box_number) {
 }
 
 function open_content_box(content_box_number){
-    let dialogRef = document.getElementById(ContentArray [content_box_number]);
+    let dialogRef = document.getElementById(functionIDs [content_box_number]);
     dialogRef.showModal();
 }
 
 function close_content_box(content_box_number){
-    let dialogRef = document.getElementById(ContentArray [content_box_number]);
+    let dialogRef = document.getElementById(functionIDs [content_box_number]);
     dialogRef.close();
 }
 
 function switch_content(content_box_number) {
-    let dialogRef = document.getElementById(ContentArray[content_box_number]);
+    let dialogRef = document.getElementById(functionIDs [content_box_number]);
     dialogRef.showModal();
 }
 
