@@ -17,7 +17,7 @@ let contentHTML = [ `<dialog id = dialog_0 onclick="close_content_box(0)">
                             <h2>Merkur</h2>
                         </header>
                         <section onclick="bubbelingProtection(event)">
-                            <img src="content/Mercury.jpg" alt="Merkur_fullscreen">
+                            <img src="content/Mercury.jpg" alt="Merkur_fullscreen" tabindex="0">
                         </section>
                         <footer onkeydown="ArrowNavigation(event,-1,0,1)" onclick="bubbelingProtection(event)">
                             <div class="button_placeholder"></div>
@@ -31,7 +31,7 @@ let contentHTML = [ `<dialog id = dialog_0 onclick="close_content_box(0)">
                             <h2>Venus</h2>
                         </header>
                         <section onclick="bubbelingProtection(event)">
-                            <img src="content/Venus.png" alt="Venus_fullscreen">
+                            <img src="content/Venus.png" alt="Venus_fullscreen" tabindex="0">
                         </section>
                         <footer onkeydown="ArrowNavigation(event,0,1,2)" onclick="bubbelingProtection(event)">
                             <button onclick="previous_content(1,0)" class="dialog_navi_button" alt="zurück"><img src="img/icon/arrow-left.png"></button>
@@ -45,7 +45,7 @@ let contentHTML = [ `<dialog id = dialog_0 onclick="close_content_box(0)">
                             <h2>Erde</h2>
                         </header>
                         <section onclick="bubbelingProtection(event)">
-                            <img src="content/Earth.jpg" alt="Erde_fullscreen">
+                            <img src="content/Earth.jpg" alt="Erde_fullscreen" tabindex="0">
                         </section>
                         <footer onkeydown="ArrowNavigation(event,1,2,3)" onclick="bubbelingProtection(event)">
                             <button onclick="previous_content(2,1)" class="dialog_navi_button" alt="zurück"><img src="img/icon/arrow-left.png"></button>
@@ -59,7 +59,7 @@ let contentHTML = [ `<dialog id = dialog_0 onclick="close_content_box(0)">
                             <h2>Mars</h2>
                         </header>
                         <section onclick="bubbelingProtection(event)">
-                            <img src="content/Mars.jpg" alt="Mars_fullscreen">
+                            <img src="content/Mars.jpg" alt="Mars_fullscreen" tabindex="0">
                         </section>
                         <footer onkeydown="ArrowNavigation(event,2,3,4)" onclick="bubbelingProtection(event)">
                             <button onclick="previous_content(3,2)" class="dialog_navi_button" alt="zurück"><img src="img/icon/arrow-left.png"></button>
@@ -73,7 +73,7 @@ let contentHTML = [ `<dialog id = dialog_0 onclick="close_content_box(0)">
                             <h2>Jupiter</h2>
                         </header>
                         <section onclick="bubbelingProtection(event)">
-                            <img src="content/Jupiter.png" alt="Jupiter_fullscreen">
+                            <img src="content/Jupiter.png" alt="Jupiter_fullscreen" tabindex="0">
                         </section>
                         <footer onkeydown="ArrowNavigation(event,3,4,5)" onclick="bubbelingProtection(event)">
                             <button onclick="previous_content(4,3)" class="dialog_navi_button" alt="zurück"><img src="img/icon/arrow-left.png"></button>
@@ -87,7 +87,7 @@ let contentHTML = [ `<dialog id = dialog_0 onclick="close_content_box(0)">
                             <h2>Die Galileische Monde</h2>
                         </header>
                         <section onclick="bubbelingProtection(event)">
-                            <img src="content/Jupiter_moons.jpg" alt="Jupiter und die Galileischen Monde_fullscreen">
+                            <img src="content/Jupiter_moons.jpg" alt="Jupiter und die Galileischen Monde_fullscreen" tabindex="0">
                         </section>
                         <footer onkeydown="ArrowNavigation(event,4,5,6)" onclick="bubbelingProtection(event)">
                             <button onclick="previous_content(5,4)" class="dialog_navi_button" alt="zurück"><img src="img/icon/arrow-left.png"></button>
@@ -101,7 +101,7 @@ let contentHTML = [ `<dialog id = dialog_0 onclick="close_content_box(0)">
                             <h2>Saturn</h2>
                         </header>
                         <section onclick="bubbelingProtection(event)">
-                            <img src="content/Saturn.jpg"  alt="Saturn_fullscreen">
+                            <img src="content/Saturn.jpg"  alt="Saturn_fullscreen" tabindex="0">
                         </section>
                         <footer onkeydown="ArrowNavigation(event,5,6,7)" onclick="bubbelingProtection(event)">
                             <button onclick="previous_content(6,5)" class="dialog_navi_button" alt="zurück"><img src="img/icon/arrow-left.png"></button>
@@ -115,7 +115,7 @@ let contentHTML = [ `<dialog id = dialog_0 onclick="close_content_box(0)">
                             <h2>Saturn Ringe</h2>
                         </header>
                         <section onclick="bubbelingProtection(event)">
-                            <img src="content/Saturn_ring.jpg"  alt="Ringe des Saturn_Fullscreen">
+                            <img src="content/Saturn_ring.jpg"  alt="Ringe des Saturn_Fullscreen" tabindex="0">
                         </section>
                         <footer onkeydown="ArrowNavigation(event,6,7,8)" onclick="bubbelingProtection(event)">
                             <button onclick="previous_content(7,6)" class="dialog_navi_button" alt="zurück"><img src="img/icon/arrow-left.png"></button>
@@ -129,7 +129,7 @@ let contentHTML = [ `<dialog id = dialog_0 onclick="close_content_box(0)">
                             <h2>Uranus</h2>
                         </header>
                         <section onclick="bubbelingProtection(event)">
-                            <img src="content/Uranus.png" alt="Uranus_fullscreen">
+                            <img src="content/Uranus.png" alt="Uranus_fullscreen" tabindex="0">
                         </section>
                         <footer onkeydown="ArrowNavigation(event,7,8,9)" onclick="bubbelingProtection(event)">
                             <button onclick="previous_content(8,7)" class="dialog_navi_button" alt="zurück"><img src="img/icon/arrow-left.png"></button>
@@ -143,7 +143,7 @@ let contentHTML = [ `<dialog id = dialog_0 onclick="close_content_box(0)">
                             <h2>Uranus Sonnenaufgang</h2>
                         </header>
                         <section onclick="bubbelingProtection(event)">
-                            <img src="content/Uranus_sunrise.jpg" alt="Dämmerung auf Uranus_fullscreen">
+                            <img src="content/Uranus_sunrise.jpg" alt="Dämmerung auf Uranus_fullscreen" tabindex="0">
                         </section>
                         <footer onkeydown="ArrowNavigation(event,8,9,10)" onclick="bubbelingProtection(event)">
                             <button onclick="previous_content(9,8)" class="dialog_navi_button" alt="zurück"><img src="img/icon/arrow-left.png"></button>
@@ -157,7 +157,7 @@ let contentHTML = [ `<dialog id = dialog_0 onclick="close_content_box(0)">
                             <h2>Neptun</h2>
                         </header>
                         <section onclick="bubbelingProtection(event)">
-                            <img src="content/neptun.jpg" alt="Neptun_fullscreen">
+                            <img src="content/neptun.jpg" alt="Neptun_fullscreen" tabindex="0">
                         </section>
                         <footer onkeydown="ArrowNavigation(event,9,10,11)" onclick="bubbelingProtection(event)">
                             <button onclick="previous_content(10,9)" class="dialog_navi_button" alt="zurück"><img src="img/icon/arrow-left.png"></button>
@@ -171,7 +171,7 @@ let contentHTML = [ `<dialog id = dialog_0 onclick="close_content_box(0)">
                             <h2>Stürme auf Neptun</h2>
                         </header>
                         <section onclick="bubbelingProtection(event)">
-                            <img src="content/Neptune_storms.jpg" alt="Stürme auf Neptun_fullscreen">
+                            <img src="content/Neptune_storms.jpg" alt="Stürme auf Neptun_fullscreen" tabindex="0">
                         </section>
                         <footer onkeydown="ArrowNavigation(event,10,11)" onclick="bubbelingProtection(event)">
                             <button onclick="previous_content(11,10)" class="dialog_navi_button" alt="zurück"><img src="img/icon/arrow-left.png"></button>
