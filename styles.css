@@ -43,36 +43,12 @@ main {
     flex-wrap: wrap;
 }
 
-.content_switch_button_left {
-    height: 35vh;
-    position:absolute;
-    top: 50%;
-    
-}
-
-.content_switch_button_left img{
-    width: 30px;
-}
-
-.content_switch_button_right {
-    width: 30px;
-    position: absolute;
-    right: 0px;
-    top: 50%;
-    
-}
-
 footer {
     display: flex;
     align-items: center;
     color: white;
     background-color: rgb(1, 1, 70);
     height: 10vh;
-}
-
-dialog footer img {
-    width: 30px;
-    margin: 0px 10px;
 }
 
 .content_box_design {
@@ -123,10 +99,24 @@ dialog {
     border: 0px;
 }
 
-dialog button {
+.dialog_close_button {
     width: 150px;
     height: 30px;
     border-radius: 5px;
+}
+
+.dialog_navi_button {
+    margin: 0px 10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+dialog footer img {
+    width: 30px;
 }
 
 dialog button:hover {
@@ -134,10 +124,10 @@ dialog button:hover {
     cursor: pointer;
 }
 
-dialog footer img:hover {
-    outline: 5px solid #b80000;
-    border-radius: 30px;
-    cursor: pointer;
+dialog button:focus {
+    padding: 0px;
+    border: 2px;
+    outline: 5px solid #b80000
 }
 
 dialog img {
@@ -175,8 +165,6 @@ dialog footer {
 }
 
 
-
-
 @media (max-width: 900px) {
     .content_box_design{
         height: 230px;
@@ -212,6 +200,11 @@ dialog footer {
         padding: 5px 0px;
         height: auto;
         width: 100%;
+        aspect-ratio: 1 / 1;
+    }
+
+    .dialog_close_button{
+        width: 75px;
     }
 }
 
