@@ -12,168 +12,168 @@ let contentThumbnail = [`<button class="thumbnail_button" onclick="open_content_
                          <button class="thumbnail_button" onclick="open_content_box(11)"><img src="content/Neptune_storms.jpg" class="content_box_design" alt="Stürme auf Neptun"></button>
                         `]
 
-let contentHTML = [ `<dialog id = dialog_0 onclick="close_content_box(0)">
+let contentHTML = [ `<dialog id = dialog_0 onclick="close_content_box(0)" onkeydown="ArrowNavigation(event,-1,0,1)">
                         <header onclick="bubbelingProtection(event)">
                             <h2>Merkur</h2>
                         </header>
                         <section onclick="bubbelingProtection(event)">
                             <img src="content/Mercury.jpg" alt="Merkur_fullscreen" tabindex="0">
                         </section>
-                        <footer onkeydown="ArrowNavigation(event,-1,0,1)" onclick="bubbelingProtection(event)">
+                        <footer onclick="bubbelingProtection(event)">
                             <div class="button_placeholder"></div>
                             <button onclick="close_content_box(0)" class="dialog_close_button" alt="schließen">Schließen</button>
                             <button onclick="next_content(0,1)" class="dialog_navi_button" alt="weiter"><img src="img/icon/arrow-right.png"></button>
                         </footer>
                     </dialog>
 
-                    <dialog id = dialog_1 onclick="close_content_box(1)">
+                    <dialog id = dialog_1 onclick="close_content_box(1)" onkeydown="ArrowNavigation(event,0,1,2)">
                         <header onclick="bubbelingProtection(event)">    
                             <h2>Venus</h2>
                         </header>
                         <section onclick="bubbelingProtection(event)">
                             <img src="content/Venus.png" alt="Venus_fullscreen" tabindex="0">
                         </section>
-                        <footer onkeydown="ArrowNavigation(event,0,1,2)" onclick="bubbelingProtection(event)">
+                        <footer onclick="bubbelingProtection(event)">
                             <button onclick="previous_content(1,0)" class="dialog_navi_button" alt="zurück"><img src="img/icon/arrow-left.png"></button>
                             <button onclick="close_content_box(1)" class="dialog_close_button" alt="schließen">Schließen</button>
                             <button onclick="next_content(1,2)" class="dialog_navi_button" alt="weiter"><img src="img/icon/arrow-right.png"></button>
                         </footer>
                     </dialog>
 
-                    <dialog id = dialog_2 onclick="close_content_box(2)">
+                    <dialog id = dialog_2 onclick="close_content_box(2)" onkeydown="ArrowNavigation(event,1,2,3)">
                         <header onclick="bubbelingProtection(event)">
                             <h2>Erde</h2>
                         </header>
                         <section onclick="bubbelingProtection(event)">
                             <img src="content/Earth.jpg" alt="Erde_fullscreen" tabindex="0">
                         </section>
-                        <footer onkeydown="ArrowNavigation(event,1,2,3)" onclick="bubbelingProtection(event)">
+                        <footer onclick="bubbelingProtection(event)">
                             <button onclick="previous_content(2,1)" class="dialog_navi_button" alt="zurück"><img src="img/icon/arrow-left.png"></button>
                             <button onclick="close_content_box(2)" class="dialog_close_button" alt="schließen">Schließen</button>
                             <button onclick="next_content(2,3)" class="dialog_navi_button" alt="weiter"><img src="img/icon/arrow-right.png"></button>
                         </footer>
                     </dialog>
 
-                    <dialog id = dialog_3 onclick="close_content_box(3)">
+                    <dialog id = dialog_3 onclick="close_content_box(3)" onkeydown="ArrowNavigation(event,2,3,4)">
                         <header onclick="bubbelingProtection(event)">
                             <h2>Mars</h2>
                         </header>
                         <section onclick="bubbelingProtection(event)">
                             <img src="content/Mars.jpg" alt="Mars_fullscreen" tabindex="0">
                         </section>
-                        <footer onkeydown="ArrowNavigation(event,2,3,4)" onclick="bubbelingProtection(event)">
+                        <footer onclick="bubbelingProtection(event)">
                             <button onclick="previous_content(3,2)" class="dialog_navi_button" alt="zurück"><img src="img/icon/arrow-left.png"></button>
                             <button onclick="close_content_box(3)" class="dialog_close_button" alt="schließen">Schließen</button>
                             <button onclick="next_content(3,4)" class="dialog_navi_button" alt="weiter"><img src="img/icon/arrow-right.png"></button>
                         </footer>
                     </dialog>
 
-                    <dialog id = dialog_4 onclick="close_content_box(4)">
+                    <dialog id = dialog_4 onclick="close_content_box(4)" onkeydown="ArrowNavigation(event,3,4,5)">
                         <header onclick="bubbelingProtection(event)">
                             <h2>Jupiter</h2>
                         </header>
                         <section onclick="bubbelingProtection(event)">
                             <img src="content/Jupiter.png" alt="Jupiter_fullscreen" tabindex="0">
                         </section>
-                        <footer onkeydown="ArrowNavigation(event,3,4,5)" onclick="bubbelingProtection(event)">
+                        <footer onclick="bubbelingProtection(event)">
                             <button onclick="previous_content(4,3)" class="dialog_navi_button" alt="zurück"><img src="img/icon/arrow-left.png"></button>
                             <button onclick="close_content_box(4)" class="dialog_close_button" alt="schließen">Schließen</button>
                             <button onclick="next_content(4,5)" class="dialog_navi_button" alt="weiter"><img src="img/icon/arrow-right.png"></button>
                         </footer>
                     </dialog>
 
-                    <dialog id = dialog_5 onclick="close_content_box(5)">
+                    <dialog id = dialog_5 onclick="close_content_box(5)" onkeydown="ArrowNavigation(event,4,5,6)">
                         <header onclick="bubbelingProtection(event)">
                             <h2>Die Galileische Monde</h2>
                         </header>
                         <section onclick="bubbelingProtection(event)">
                             <img src="content/Jupiter_moons.jpg" alt="Jupiter und die Galileischen Monde_fullscreen" tabindex="0">
                         </section>
-                        <footer onkeydown="ArrowNavigation(event,4,5,6)" onclick="bubbelingProtection(event)">
+                        <footer onclick="bubbelingProtection(event)">
                             <button onclick="previous_content(5,4)" class="dialog_navi_button" alt="zurück"><img src="img/icon/arrow-left.png"></button>
                             <button onclick="close_content_box(5)" class="dialog_close_button" alt="schließen">Schließen</button>
                             <button onclick="next_content(5,6)" class="dialog_navi_button" alt="weiter"><img src="img/icon/arrow-right.png"></button>
                         </footer>
                     </dialog>
 
-                    <dialog id = dialog_6 onclick="close_content_box(6)">
+                    <dialog id = dialog_6 onclick="close_content_box(6)" onkeydown="ArrowNavigation(event,5,6,7)">
                         <header onclick="bubbelingProtection(event)">
                             <h2>Saturn</h2>
                         </header>
                         <section onclick="bubbelingProtection(event)">
                             <img src="content/Saturn.jpg"  alt="Saturn_fullscreen" tabindex="0">
                         </section>
-                        <footer onkeydown="ArrowNavigation(event,5,6,7)" onclick="bubbelingProtection(event)">
+                        <footer onclick="bubbelingProtection(event)">
                             <button onclick="previous_content(6,5)" class="dialog_navi_button" alt="zurück"><img src="img/icon/arrow-left.png"></button>
                             <button onclick="close_content_box(6)" class="dialog_close_button" alt="schließen">Schließen</button>
                             <button onclick="next_content(6,7)" class="dialog_navi_button" alt="weiter"><img src="img/icon/arrow-right.png"></button>
                         </footer>
                     </dialog>
 
-                    <dialog id = dialog_7 onclick="close_content_box(7)">
+                    <dialog id = dialog_7 onclick="close_content_box(7)" onkeydown="ArrowNavigation(event,6,7,8)">
                         <header onclick="bubbelingProtection(event)">
                             <h2>Saturn Ringe</h2>
                         </header>
                         <section onclick="bubbelingProtection(event)">
                             <img src="content/Saturn_ring.jpg"  alt="Ringe des Saturn_Fullscreen" tabindex="0">
                         </section>
-                        <footer onkeydown="ArrowNavigation(event,6,7,8)" onclick="bubbelingProtection(event)">
+                        <footer onclick="bubbelingProtection(event)">
                             <button onclick="previous_content(7,6)" class="dialog_navi_button" alt="zurück"><img src="img/icon/arrow-left.png"></button>
                             <button onclick="close_content_box(7)" class="dialog_close_button" alt="schließen">Schließen</button>
                             <button onclick="next_content(7,8)" class="dialog_navi_button" alt="weiter"><img src="img/icon/arrow-right.png"></button>
                         </footer>
                     </dialog>
 
-                    <dialog id = dialog_8 onclick="close_content_box(8)">
+                    <dialog id = dialog_8 onclick="close_content_box(8)" onkeydown="ArrowNavigation(event,7,8,9)">
                         <header onclick="bubbelingProtection(event)">
                             <h2>Uranus</h2>
                         </header>
                         <section onclick="bubbelingProtection(event)">
                             <img src="content/Uranus.png" alt="Uranus_fullscreen" tabindex="0">
                         </section>
-                        <footer onkeydown="ArrowNavigation(event,7,8,9)" onclick="bubbelingProtection(event)">
+                        <footer onclick="bubbelingProtection(event)">
                             <button onclick="previous_content(8,7)" class="dialog_navi_button" alt="zurück"><img src="img/icon/arrow-left.png"></button>
                             <button onclick="close_content_box(8)" class="dialog_close_button" alt="schließen">Schließen</button>
                             <button onclick="next_content(8,9)" class="dialog_navi_button" alt="weiter"><img src="img/icon/arrow-right.png"></button>
                         </footer>
                     </dialog>
 
-                    <dialog id = dialog_9 onclick="close_content_box(9)">
+                    <dialog id = dialog_9 onclick="close_content_box(9)" onkeydown="ArrowNavigation(event,8,9,10)">
                         <header onclick="bubbelingProtection(event)">
                             <h2>Uranus Sonnenaufgang</h2>
                         </header>
                         <section onclick="bubbelingProtection(event)">
                             <img src="content/Uranus_sunrise.jpg" alt="Dämmerung auf Uranus_fullscreen" tabindex="0">
                         </section>
-                        <footer onkeydown="ArrowNavigation(event,8,9,10)" onclick="bubbelingProtection(event)">
+                        <footer onclick="bubbelingProtection(event)">
                             <button onclick="previous_content(9,8)" class="dialog_navi_button" alt="zurück"><img src="img/icon/arrow-left.png"></button>
                             <button onclick="close_content_box(9)" class="dialog_close_button" alt="schließen">Schließen</button>
                             <button onclick="next_content(9,10)" class="dialog_navi_button" alt="weiter"><img src="img/icon/arrow-right.png"></button>
                         </footer>
                     </dialog>
 
-                    <dialog id = dialog_10 onclick="close_content_box(10)">
+                    <dialog id = dialog_10 onclick="close_content_box(10)" onkeydown="ArrowNavigation(event,9,10,11)">
                         <header onclick="bubbelingProtection(event)">
                             <h2>Neptun</h2>
                         </header>
                         <section onclick="bubbelingProtection(event)">
                             <img src="content/neptun.jpg" alt="Neptun_fullscreen" tabindex="0">
                         </section>
-                        <footer onkeydown="ArrowNavigation(event,9,10,11)" onclick="bubbelingProtection(event)">
+                        <footer onclick="bubbelingProtection(event)">
                             <button onclick="previous_content(10,9)" class="dialog_navi_button" alt="zurück"><img src="img/icon/arrow-left.png"></button>
                             <button onclick="close_content_box(10)" class="dialog_close_button" alt="schließen">Schließen</button>
                             <button onclick="next_content(10,11)" class="dialog_navi_button" alt="weiter"><img src="img/icon/arrow-right.png"></button>
                         </footer>
                     </dialog>
 
-                    <dialog id = dialog_11 onclick="close_content_box(11)">
+                    <dialog id = dialog_11 onclick="close_content_box(11)" onkeydown="ArrowNavigation(event,10,11)">
                         <header onclick="bubbelingProtection(event)">
                             <h2>Stürme auf Neptun</h2>
                         </header>
                         <section onclick="bubbelingProtection(event)">
                             <img src="content/Neptune_storms.jpg" alt="Stürme auf Neptun_fullscreen" tabindex="0">
                         </section>
-                        <footer onkeydown="ArrowNavigation(event,10,11)" onclick="bubbelingProtection(event)">
+                        <footer onclick="bubbelingProtection(event)">
                             <button onclick="previous_content(11,10)" class="dialog_navi_button" alt="zurück"><img src="img/icon/arrow-left.png"></button>
                             <button onclick="close_content_box(11)" class="dialog_close_button" alt="schließen">Schließen</button>
                             <div class="button_placeholder"></div>
