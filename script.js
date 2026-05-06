@@ -80,47 +80,52 @@ function render () {
 }
 
 function getNotesHtml(index){
-    return `                    <div class="single_element">
-                                    <div class="thumbnail-section">
-                                        <button class="thumbnail_button">
-                                            <img class="content_box_design" src="${dataArray[index].image}">
-                                        </button>
-                                    </div>
-                                </div>`
+    return `                <div class="thumbnail-section">
+                                <button class="thumbnail_button" onclick="open_content_box(${dataArray[index].number})">
+                                    <img class="content_box_design" src="${dataArray[index].image}">
+                                </button>
+                            </div>
+                            <dialog id="${dataArray[index].number}" onclick="close_content_box(${dataArray[index].number})" onkeydown="ArrowNavigation(event,0,1,2)">
+                                <header onclick="bubbelingProtection(event)">    
+                                    <h2>${dataArray[index].name}</h2>
+                                </header>
+                                <section onclick="bubbelingProtection(event)">
+                                    <img src="${dataArray[index].image}" alt="${dataArray[index].name}" tabindex="0">
+                                </section>
+                                <footer onclick="bubbelingProtection(event)">
+                                    <button onclick="previous_content(${dataArray[index].number},${dataArray[index].number}-1)" class="dialog_navi_button" alt="zurück"><img src="img/icon/arrow-left.png"></button>
+                                    <button onclick="close_content_box(${dataArray[index].number})" class="dialog_close_button" alt="schließen">Schließen</button>
+                                    <button onclick="next_content(${dataArray[index].number},${dataArray[index].number}+1)" class="dialog_navi_button" alt="weiter"><img src="img/icon/arrow-right.png"></button>
+                                </footer>
+                            </dialog>
+                            `
 }
 
-
-
-function open_content_box(content_box_number){
-    let dialogRef = document.getElementById(functionIDs [content_box_number]);
+function open_content_box(index){
+    let dialogRef = document.getElementById(dataArray[index].number);
     dialogRef.showModal();
 }
 
-function close_content_box(content_box_number){
-    let dialogRef = document.getElementById(functionIDs [content_box_number]);
+function close_content_box(index){
+    let dialogRef = document.getElementById(dataArray[index].number);
     dialogRef.close();
-}
-
-function switch_content(content_box_number) {
-    let dialogRef = document.getElementById(functionIDs [content_box_number]);
-    dialogRef.showModal();
 }
 
 function previous_content(toClose, openPrevious) {
     close_content_box(toClose)
-    switch_content(openPrevious)
+    open_content_box(openPrevious)
 }
 
 function next_content(toClose, openNext) {
     close_content_box(toClose)      
-    switch_content(openNext)
+    open_content_box(openNext)
 }
 
 function ArrowNavigation(event, openPrevious, toClose, openNext) {
     if
-    (event.key === 'ArrowLeft') {switch_content(openPrevious), close_content_box(toClose)} 
+    (event.key === 'ArrowLeft') {open_content_box(openPrevious), close_content_box(toClose)} 
     else if
-    (event.key === 'ArrowRight') {switch_content(openNext), close_content_box(toClose)}
+    (event.key === 'ArrowRight') {open_content_box(openNext), close_content_box(toClose)}
 }
 
 function bubbelingProtection (event) {
