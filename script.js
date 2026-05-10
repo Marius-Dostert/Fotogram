@@ -85,7 +85,7 @@ function getNotesHtml(index){
                                     <img class="content_box_design" src="${dataArray[index].image}">
                                 </button>
                             </div>
-                            <dialog id="${dataArray[index].number}" onclick="close_content_box(${dataArray[index].number})" onkeydown="ArrowNavigation(event,0,1,2)">
+                            <dialog id="${dataArray[index].number}" onclick="close_content_box(${dataArray[index].number})" onkeydown="ArrowNavigation(event,${dataArray[index].number}-1, ${dataArray[index].number}, ${dataArray[index].number}+1)">
                                 <header onclick="bubbelingProtection(event)">    
                                     <h2>${dataArray[index].name}</h2>
                                 </header>

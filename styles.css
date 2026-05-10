@@ -164,61 +164,44 @@ dialog footer {
     width: 50px;
 }
 
+@media (max-width: 1060px) {
 
-@media (max-width: 900px) {
-    .content_box_design{
-        height: 230px;
-        width: 230px;
-    }
-
-}
-
-@media (max-width: 780px) {
-    .content_box_design{
-        height: 280px;
-        width: 280px;
+        #content {
+        padding: 25px 10px 50px 10px;
     }
 }
 
-@media (max-width: 640px) {
-    .content_box_design{
-        height: 220px;
-        width: 220px;
-    }
+@media (max-width: 670px) {
 
-    header img{
-        height: 60px;
-    }
-    
-    h1 {
-        font-size: 25px;
-    }
-}
-
-@media (max-width: 520px) {
-    .content_box_design{
-        padding: 5px 0px;
+    .content_box_design {
         height: auto;
-        width: 100%;
-        aspect-ratio: 1 / 1;
+        width: 45vw;
+        aspect-ratio: 1;
     }
 
-    .dialog_close_button{
-        width: 75px;
+    #content {
+        padding: 25px 5px 25px 5px;
     }
 }
 
-@media (max-width: 390px) {
-    
-    header img{
-        height: 46px;
+@media (max-width: 500px) {
+
+    header {
+        display: flex;
+        justify-content: center;
     }
-    
+
+    header img {
+        height: 50px;
+        padding-left: 0px;
+    }
+
     h1 {
         font-size: 20px;
     }
 
-    h3 {
-        font-size: 17px;
+    .content_box_design {
+        height: auto;
+        width: 89vw;
     }
 }
