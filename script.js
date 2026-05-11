@@ -1,74 +1,63 @@
-let dataArray = [  {
-                    name: "Merkur", 
-                    image: "content/Mercury.jpg",
-                    number: 0
+let dataArray = [   {
+                        name: "Merkur", 
+                        image: "content/Mercury.jpg",
                     },
 
                     {
-                    name: "Venus",
-                    image: "content/Venus.png",
-                    number: 1
+                        name: "Venus",
+                        image: "content/Venus.png",
                     },
                     
                     {
-                    name: "Erde",
-                    image: "content/Earth.jpg",
-                    number: 2
+                        name: "Erde",
+                        image: "content/Earth.jpg",
                     },
 
                     {
-                    name: "Mars",
-                    image: "content/Mars.jpg",
-                    number: 3
+                        name: "Mars",
+                        image: "content/Mars.jpg",
                     },
 
                     {
-                    name: "Jupiter",
-                    image: "content/Jupiter.png",
-                    number: 4
+                        name: "Jupiter",
+                        image: "content/Jupiter.png",
                     },
 
                     {
-                    name: "Die Galileische Monde",
-                    image: "content/Jupiter_moons.jpg",
-                    number: 5
+                        name: "Die Galileische Monde",
+                        image: "content/Jupiter_moons.jpg",
                     },
 
                     {
-                    name: "Saturn",
-                    image: "content/Saturn.jpg",
-                    number: 6
+                        name: "Saturn",
+                        image: "content/Saturn.jpg",
                     },
 
                     {
-                    name: "Saturn Ringe",
-                    image: "content/Saturn_ring.jpg",
-                    number: 7
+                        name: "Saturn Ringe",
+                        image: "content/Saturn_ring.jpg",
                     },
 
                     {
-                    name: "Uranus",
-                    image: "content/Uranus.png",
-                    number: 8
+                        name: "Uranus",
+                        image: "content/Uranus.png",
                     },
 
                     {
-                    name: "Uranus Sonnenaufgang",
-                    image: "content/Uranus_sunrise.jpg",
-                    number: 9
+                        name: "Uranus Sonnenaufgang",
+                        image: "content/Uranus_sunrise.jpg",
                     },
 
                     {
-                    name: "Neptun",
-                    image: "content/neptun.jpg",
-                    number: 10
+                        name: "Neptun",
+                        image: "content/neptun.jpg",
                     },
 
                     {
-                    name: "Stürme auf Neptun",
-                    image: "content/Neptune_storms.jpg",
-                    number: 11
+                        name: "Stürme auf Neptun",
+                        image: "content/Neptune_storms.jpg",
                     },
+
                 ]
 
 
@@ -81,11 +70,11 @@ function render () {
 
 function getNotesHtml(index){
     return `                <div class="thumbnail-section">
-                                <button class="thumbnail_button" onclick="open_content_box(${dataArray[index].number})">
+                                <button class="thumbnail_button" onclick="open_content_box(${index})">
                                     <img class="content_box_design" src="${dataArray[index].image}">
                                 </button>
                             </div>
-                            <dialog id="${dataArray[index].number}" onclick="close_content_box(${dataArray[index].number})" onkeydown="ArrowNavigation(event,${dataArray[index].number}-1, ${dataArray[index].number}, ${dataArray[index].number}+1)">
+                            <dialog id="${index}" onclick="close_content_box(${index})" onkeydown="ArrowNavigation(event,${index}-1, ${index}, ${index}+1)">
                                 <header onclick="bubbelingProtection(event)">    
                                     <h2>${dataArray[index].name}</h2>
                                 </header>
@@ -93,21 +82,21 @@ function getNotesHtml(index){
                                     <img src="${dataArray[index].image}" alt="${dataArray[index].name}" tabindex="0">
                                 </section>
                                 <footer onclick="bubbelingProtection(event)">
-                                    <button onclick="previous_content(${dataArray[index].number},${dataArray[index].number}-1)" class="dialog_navi_button" alt="zurück"><img src="img/icon/arrow-left.png"></button>
-                                    <button onclick="close_content_box(${dataArray[index].number})" class="dialog_close_button" alt="schließen">Schließen</button>
-                                    <button onclick="next_content(${dataArray[index].number},${dataArray[index].number}+1)" class="dialog_navi_button" alt="weiter"><img src="img/icon/arrow-right.png"></button>
+                                    <button onclick="previous_content(${index},${index}-1)" class="dialog_navi_button" alt="zurück"><img src="img/icon/arrow-left.png"></button>
+                                    <button onclick="close_content_box(${index})" class="dialog_close_button" alt="schließen">Schließen</button>
+                                    <button onclick="next_content(${index},${index}+1)" class="dialog_navi_button" alt="weiter"><img src="img/icon/arrow-right.png"></button>
                                 </footer>
                             </dialog>
                             `
 }
 
 function open_content_box(index){
-    let dialogRef = document.getElementById(dataArray[index].number);
+    let dialogRef = document.getElementById(index);
     dialogRef.showModal();
 }
 
 function close_content_box(index){
-    let dialogRef = document.getElementById(dataArray[index].number);
+    let dialogRef = document.getElementById(index);
     dialogRef.close();
 }
 
