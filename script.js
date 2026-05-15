@@ -74,7 +74,7 @@ function getNotesHtml(index){
                                     <img class="content_box_design" src="${dataArray[index].image}">
                                 </button>
                             </div>
-                            <dialog id="${index}" onclick="close_content_box(${index})" onkeydown="ArrowNavigation(event,${index}-1, ${index}, ${index}+1)">
+                            <dialog id="${index}" onclick="close_content_box(${index})" onkeydown="arrowNavigation(event,${index}-1, ${index}, ${index}+1)">
                                 <header onclick="bubbelingProtection(event)">    
                                     <h2>${dataArray[index].name}</h2>
                                 </header>
@@ -110,11 +110,14 @@ function next_content(toClose, openNext) {
     open_content_box(openNext)
 }
 
-function ArrowNavigation(event, openPrevious, toClose, openNext) {
-    if
-    (event.key === 'ArrowLeft') {open_content_box(openPrevious), close_content_box(toClose)} 
-    else if
-    (event.key === 'ArrowRight') {open_content_box(openNext), close_content_box(toClose)}
+function arrowNavigation(event, openPrevious, toClose, openNext) {
+    if (event.key === 'ArrowLeft') {
+        open_content_box(openPrevious), close_content_box(toClose)
+    } 
+
+    else if (event.key === 'ArrowRight') {
+        open_content_box(openNext), close_content_box(toClose)
+    }
 }
 
 function bubbelingProtection (event) {

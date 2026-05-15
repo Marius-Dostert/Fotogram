@@ -9,20 +9,28 @@ h1 {
 }
 
 h3 {
-    padding: 25px 25px 25px 55px;
+    padding: 25px 25px 25px 50px;
     margin: 0px;
 }
 
 header {
     background-color: rgb(1, 1, 70);
-    height: 15vh;
     display: flex;
-    align-items: center;
+    justify-content: center;
 }
 
 header img {
-    padding-left: 30px;
+    padding-left: 50px;
     height: 85px;
+}
+
+.header_logo {
+    height: 15vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    max-width: 1440px;
 }
 
 main {
@@ -41,14 +49,21 @@ main {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    max-width: 1440px;
 }
 
 footer {
     display: flex;
     align-items: center;
+    justify-content: center;
     color: white;
     background-color: rgb(1, 1, 70);
     height: 10vh;
+}
+
+.footer_bottomline {
+    max-width: 1440px;
+    width: 100vw;
 }
 
 .content_box_design {
@@ -184,9 +199,9 @@ dialog footer {
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 550px) {
 
-    header {
+    .header_logo {
         display: flex;
         justify-content: center;
     }
@@ -198,6 +213,15 @@ dialog footer {
 
     h1 {
         font-size: 20px;
+    }
+
+    h3 {
+        padding: 0px;
+    }
+
+    .footer_bottomline {
+        display: flex;
+        justify-content: center;
     }
 
     .content_box_design {
