@@ -179,6 +179,10 @@ dialog footer {
     width: 50px;
 }
 
+.hide {
+    display: none;
+}
+
 @media (max-width: 1060px) {
 
         #content {

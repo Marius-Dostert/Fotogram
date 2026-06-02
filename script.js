@@ -82,9 +82,9 @@ function getNotesHtml(index){
                                     <img src="${dataArray[index].image}" alt="${dataArray[index].name}" tabindex="0">
                                 </section>
                                 <footer onclick="bubbelingProtection(event)">
-                                    <button onclick="previous_content(${index},${index}-1)" class="dialog_navi_button" alt="zurück"><img src="img/icon/arrow-left.png"></button>
+                                    <button id="previousButton${index}" onclick="previous_content(${index},${index}-1)" class="dialog_navi_button" alt="zurück"><img src="img/icon/arrow-left.png"></button>
                                     <button onclick="close_content_box(${index})" class="dialog_close_button" alt="schließen">Schließen</button>
-                                    <button onclick="next_content(${index},${index}+1)" class="dialog_navi_button" alt="weiter"><img src="img/icon/arrow-right.png"></button>
+                                    <button id="nextButton${index}" onclick="next_content(${index},${index}+1)" class="dialog_navi_button" alt="weiter"><img src="img/icon/arrow-right.png"></button>
                                 </footer>
                             </dialog>
                             `
@@ -103,11 +103,20 @@ function close_content_box(index){
 function previous_content(toClose, openPrevious) {
     close_content_box(toClose)
     open_content_box(openPrevious)
+    if (openPrevious == 0) {
+        let pButton = document.getElementById(`previousButton0`);
+        pButton.classList.add("hide")
+    } 
 }
 
 function next_content(toClose, openNext) {
     close_content_box(toClose)      
     open_content_box(openNext)
+    if (openNext + 2 > dataArray.length) {
+        let nButton = document.getElementById(`nextButton${openNext}`);
+        nButton.classList.add("hide")
+    }
+
 }
 
 function arrowNavigation(event, openPrevious, toClose, openNext) {
@@ -123,3 +132,4 @@ function arrowNavigation(event, openPrevious, toClose, openNext) {
 function bubbelingProtection (event) {
     event.stopPropagation()
 }
+
