@@ -93,6 +93,14 @@ function getNotesHtml(index){
 function open_content_box(index){
     let dialogRef = document.getElementById(index);
     dialogRef.showModal();
+    if (index == 0) {
+        let pButton = document.getElementById(`previousButton0`);
+        pButton.classList.add("hide")
+    }
+    else if (index + 2 > dataArray.length) {
+        let nButton = document.getElementById(`nextButton${index}`);
+        nButton.classList.add("hide")
+    }
 }
 
 function close_content_box(index){
@@ -116,7 +124,6 @@ function next_content(toClose, openNext) {
         let nButton = document.getElementById(`nextButton${openNext}`);
         nButton.classList.add("hide")
     }
-
 }
 
 function arrowNavigation(event, openPrevious, toClose, openNext) {
