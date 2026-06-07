@@ -82,9 +82,13 @@ function getNotesHtml(index){
                                     <img src="${dataArray[index].image}" alt="${dataArray[index].name}" tabindex="0">
                                 </section>
                                 <footer onclick="bubbelingProtection(event)">
-                                    <button id="previousButton${index}" onclick="previous_content(${index},${index}-1)" class="dialog_navi_button" alt="zurück"><img src="img/icon/arrow-left.png"></button>
+                                    <div class="button_placeholder">
+                                        <button id="previousButton${index}" onclick="previous_content(${index},${index}-1)" class="dialog_navi_button" alt="zurück"><img src="img/icon/arrow-left.png"></button>
+                                    </div>
                                     <button onclick="close_content_box(${index})" class="dialog_close_button" alt="schließen">Schließen</button>
-                                    <button id="nextButton${index}" onclick="next_content(${index},${index}+1)" class="dialog_navi_button" alt="weiter"><img src="img/icon/arrow-right.png"></button>
+                                    <div class="button_placeholder">
+                                        <button id="nextButton${index}" onclick="next_content(${index},${index}+1)" class="dialog_navi_button" alt="weiter"><img src="img/icon/arrow-right.png"></button>
+                                    </div>
                                 </footer>
                             </dialog>
                             `
