@@ -61,39 +61,6 @@ let dataArray = [   {
                 ]
 
 
-function render () {
-    let contentref = document.getElementById("content")
-    for (let index = 0; index < dataArray.length; index++) {
-        contentref.innerHTML += getNotesHtml(index);
-    }
-}
-
-function getNotesHtml(index){
-    return `                <div class="thumbnail-section">
-                                <button class="thumbnail_button" onclick="open_content_box(${index})">
-                                    <img class="content_box_design" src="${dataArray[index].image}">
-                                </button>
-                            </div>
-                            <dialog id="${index}" onclick="close_content_box(${index})" onkeydown="arrowNavigation(event,${index}-1, ${index}, ${index}+1)">
-                                <header onclick="bubbelingProtection(event)">    
-                                    <h2>${dataArray[index].name}</h2>
-                                </header>
-                                <section onclick="bubbelingProtection(event)">
-                                    <img src="${dataArray[index].image}" alt="${dataArray[index].name}" tabindex="0">
-                                </section>
-                                <footer onclick="bubbelingProtection(event)">
-                                    <div class="button_placeholder">
-                                        <button id="previousButton${index}" onclick="previous_content(${index},${index}-1)" class="dialog_navi_button" alt="zurück"><img src="img/icon/arrow-left.png"></button>
-                                    </div>
-                                    <button onclick="close_content_box(${index})" class="dialog_close_button" alt="schließen">Schließen</button>
-                                    <div class="button_placeholder">
-                                        <button id="nextButton${index}" onclick="next_content(${index},${index}+1)" class="dialog_navi_button" alt="weiter"><img src="img/icon/arrow-right.png"></button>
-                                    </div>
-                                </footer>
-                            </dialog>
-                            `
-}
-
 function open_content_box(index){
     let dialogRef = document.getElementById(index);
     dialogRef.showModal();
@@ -116,8 +83,8 @@ function previous_content(toClose, openPrevious) {
     close_content_box(toClose)
     open_content_box(openPrevious)
     if (openPrevious == 0) {
-        let pButton = document.getElementById(`previousButton0`);
-        pButton.classList.add("hide")
+        let arrowLeftButton = document.getElementById(`previousButton0`);
+        arrowLeftButton.classList.add("hide")
     } 
 }
 
@@ -125,18 +92,21 @@ function next_content(toClose, openNext) {
     close_content_box(toClose)      
     open_content_box(openNext)
     if (openNext + 2 > dataArray.length) {
-        let nButton = document.getElementById(`nextButton${openNext}`);
-        nButton.classList.add("hide")
+        let arrowRightButton = document.getElementById(`nextButton${openNext}`);
+        arrowRightButton.classList.add("hide")
     }
 }
 
 function arrowNavigation(event, openPrevious, toClose, openNext) {
+
     if (event.key === 'ArrowLeft') {
         open_content_box(openPrevious), close_content_box(toClose)
     } 
 
-    else if (event.key === 'ArrowRight') {
+    if (event.key === 'ArrowRight') {
         open_content_box(openNext), close_content_box(toClose)
+    } else {
+        console.log("End")
     }
 }
 
