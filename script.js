@@ -57,7 +57,6 @@ let dataArray = [   {
                         name: "Stürme auf Neptun",
                         image: "content/Neptune_storms.jpg",
                     },
-
                 ]
 
 
@@ -98,15 +97,19 @@ function next_content(toClose, openNext) {
 }
 
 function arrowNavigation(event, openPrevious, toClose, openNext) {
+    arrowNavigationLeft (event, openPrevious, toClose)
+    arrowNavigationRight(event, openNext, toClose)
+}
 
-    if (event.key === 'ArrowLeft') {
+function arrowNavigationLeft (event, openPrevious, toClose) {
+    if (event.key === 'ArrowLeft' && openPrevious >= 0) {
         open_content_box(openPrevious), close_content_box(toClose)
-    } 
+    }
+}
 
-    if (event.key === 'ArrowRight') {
+function arrowNavigationRight (event, openNext, toClose) {
+    if (event.key === 'ArrowRight' && openNext < dataArray.length) {
         open_content_box(openNext), close_content_box(toClose)
-    } else {
-        console.log("End")
     }
 }
 
