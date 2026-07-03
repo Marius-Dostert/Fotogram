@@ -1,10 +1,3 @@
-function render () {
-    let contentref = document.getElementById("content")
-    for (let index = 0; index < dataArray.length; index++) {
-        contentref.innerHTML += getNotesHtml(index);
-    }
-}
-
 function getNotesHtml(index){
     return `                <div class="thumbnail-section">
                                 <button class="thumbnail_button" onclick="open_content_box(${index})">

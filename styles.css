@@ -9,8 +9,9 @@ h1 {
 }
 
 h3 {
-    padding: 25px 25px 25px 50px;
+    padding-left: 55px;
     margin: 0px;
+    font-size: 15px;
 }
 
 header {
@@ -36,7 +37,7 @@ header img {
 main {
     min-height: 75vh;
     color: white;
-    background-color: rgb(42, 14, 68);
+    background-color: white;
     flex-direction: column;
     display: flex;
     justify-content: flex-start;
@@ -63,8 +64,7 @@ footer {
 }
 
 .footer_bottomline {
-    max-width: 1440px;
-    width: 100vw;
+    width: 155px;
 }
 
 .content_box_design {
@@ -93,13 +93,13 @@ footer {
 
 .thumbnail_button:hover {
     padding: 0px;
-    border-radius: 25px;
-    border: 5px solid #b80000
+    border-radius: 30px;
+    border: 5px solid #b80000;
 }
 
 .thumbnail_button:focus {
     padding: 0px;
-    border-radius: 25px;
+    border-radius: 30px;
     border: 5px solid #b80000
 }
 
@@ -215,15 +215,6 @@ dialog footer {
 
     h1 {
         font-size: 20px;
-    }
-
-    h3 {
-        padding: 0px;
-    }
-
-    .footer_bottomline {
-        display: flex;
-        justify-content: center;
     }
 
     .content_box_design {
