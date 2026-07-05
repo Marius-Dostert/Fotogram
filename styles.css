@@ -35,9 +35,9 @@ header img {
 }
 
 main {
+    background-color: rgb(42, 14, 68);
     min-height: 75vh;
     color: white;
-    background-color: white;
     flex-direction: column;
     display: flex;
     justify-content: flex-start;
@@ -68,6 +68,7 @@ footer {
 }
 
 .content_box_design {
+    display: block;
     object-fit: cover;
     cursor: pointer;
     height: 200px;
@@ -104,7 +105,7 @@ footer {
 }
 
 dialog::backdrop {
-    background-color: rgb(36, 36, 36);
+    background-color: rgb(36, 36, 36, 0.95);
 }
 
 dialog {
@@ -220,5 +221,28 @@ dialog footer {
     .content_box_design {
         height: auto;
         width: 89vw;
+    }
+
+    h2 {
+        font-size: 20px;
+        margin: 0px;
+    }
+
+    .dialog_close_button {
+        width: 80px;
+        height: 25px;
+    }
+
+    .dialog_navi_button{
+        width: 25px;
+        height: 25px;
+    }
+
+    dialog footer img {
+        width: 25px;
+    }
+
+    dialog section {
+        height: 84vh;
     }
 }
