@@ -234,6 +234,7 @@ dialog footer {
     }
 
     .dialog_navi_button{
+        margin: 0px 12px;
         width: 25px;
         height: 25px;
     }

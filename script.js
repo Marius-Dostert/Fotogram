@@ -84,21 +84,16 @@ function close_content_box(index){
     dialogRef.close();
 }
 
-function previous_content(toClose, openPrevious) {
+function switch_content(toClose, switchTo) {
     close_content_box(toClose)
-    open_content_box(openPrevious)
-    if (openPrevious == 0) {
-        let arrowLeftButton = document.getElementById(`previousButton0`);
-        arrowLeftButton.classList.add("hide")
-    } 
-}
+    open_content_box(switchTo)
 
-function next_content(toClose, openNext) {
-    close_content_box(toClose)      
-    open_content_box(openNext)
-    if (openNext + 2 > dataArray.length) {
-        let arrowRightButton = document.getElementById(`nextButton${openNext}`);
-        arrowRightButton.classList.add("hide")
+    if (switchTo < toClose) {
+        document.getElementById(`previousButton${switchTo}`).focus();
+    }
+
+    if (switchTo > toClose) {
+        document.getElementById(`nextButton${switchTo}`).focus();
     }
 }
 
