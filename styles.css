@@ -50,6 +50,7 @@ main {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    gap: 5px;
     max-width: 1440px;
 }
 
@@ -82,20 +83,17 @@ footer {
     flex-wrap: wrap;
 }
 
-.thumbnail img:hover {
-    padding: 0px;
-    border: 5px solid #b80000
-}
-
 .thumbnail_button {
     all: unset;
-    padding: 5px;
+    border: 5px solid transparent;
+    border-radius: 30px;
+    padding: 0px;
 }
 
 .thumbnail_button:hover {
-    padding: 0px;
-    border-radius: 30px;
     border: 5px solid #b80000;
+    border-radius: 30px;
+    padding: 0px;
 }
 
 .thumbnail_button:focus {
