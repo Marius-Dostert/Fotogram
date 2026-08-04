@@ -67,7 +67,7 @@ function render () {
 }
 
 function open_content_box(index){
-    let dialogRef = document.getElementById(index);
+    let dialogRef = document.getElementById("dialog"+index);
     dialogRef.showModal();
     if (index == 0) {
         let pButton = document.getElementById(`previousButton0`);
@@ -80,7 +80,7 @@ function open_content_box(index){
 }
 
 function close_content_box(index){
-    let dialogRef = document.getElementById(index);
+    let dialogRef = document.getElementById("dialog"+index);
     dialogRef.close();
 }
 
